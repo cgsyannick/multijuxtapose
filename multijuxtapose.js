@@ -137,11 +137,11 @@
       
       tmp_table.append(
         $("<tr>").append(
-          $("<th>",{title:"Image Gauche"}).css({"text-align":"center","padding-left":"10px"}).html("Gauche&nbsp;")
+          $("<th>",{title:"Image Gauche"}).css({"text-align":"center","padding-left":"10px","font-size":"small"}).html("Gauche&nbsp;")
         ).append(
-          $("<th>",{title:"Image Droite"}).css({"text-align":"center"}).html("Droite&nbsp;")
+          $("<th>",{title:"Image Droite"}).css({"text-align":"center","font-size":"small"}).html("Droite&nbsp;")
         ).append(
-          $("<th>",{title:"Image"}).css({"text-align":"center","padding-right":"10px"}).html("Image s&eacute;lectionn&eacute;e")
+          $("<th>",{title:"Image"}).css({"text-align":"center","padding-right":"10px","font-size":"small"}).html("Image s&eacute;lectionn&eacute;e")
         )
       );
       
@@ -158,14 +158,14 @@
         for(var j=0;j<2;j++){
           
           tmp_div = $("<div>",{class:"selector_"+j}).css({
-            width:"15px",
-            height:"15px",
+            width:"12px",
+            height:"12px",
             border: "1px solid rgba(100,100,100,0.5)",
             padding: "0px",
             cursor:"pointer"
           }).append($("<div>").css({
-            width:"14px",
-            height:"14px",
+            width:"11px",
+            height:"11px",
             background:"rgba(100,200,100,1)"
             })
           );
@@ -188,7 +188,7 @@
           
         }
 
-        tmp_row.append($("<td>").css({"text-align":"center","padding-left":"10px"}).html(tmp_title));
+        tmp_row.append($("<td>").css({"text-align":"center","padding-left":"10px","font-size":"small"}).html(tmp_title));
         tmp_table.append(tmp_row);
  
       }
